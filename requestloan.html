@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jolfi Ent Ltd</title>
+    <link rel="icon" href="/images/logo.JPG" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <header>
+      <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+              <a href="./index.html">
+                <div
+                  class="bg-white p-4 relative"
+                  style="clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%)"
+                >
+                  <span class="text-2xl font-bold">
+                    <span class="text-orange-500">Jolfi</span>
+                    <span class="text-blue-600">Ent Ltd</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+    
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+              <a href="./index.html" class="text-orange-500 font-medium">Home</a>
+              <a href="./loans.html" class="text-gray-600 hover:text-orange-500 font-medium">Loans</a>
+              <a href="./Faqs.html" class="text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
+              <a href="./about.html" class="text-gray-600 hover:text-orange-500 font-medium">About</a>
+              <a href="./contact.html" class="text-gray-600 hover:text-orange-500 font-medium">Contact</a>
+            </div>
+    
+            <!-- Action Buttons -->
+            <div class="flex items-center space-x-4">
+              <button class="text-gray-600 hover:text-orange-500">
+                <i class="fas fa-search text-xl"></i>
+              </button>
+              <a href="./requestloan.html" class="btn bg-orange-500 hover:bg-orange-600 text-white border-none">
+                Request Loan
+              </a>
+            </div>
+    
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+              <label for="menu-toggle" class="cursor-pointer text-gray-600 hover:text-orange-500">
+                <i class="fas fa-bars text-2xl"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+        <div class="hidden peer-checked:block md:hidden bg-white shadow-md">
+          <a href="./index.html" class="block px-4 py-2 text-orange-500 font-medium">Home</a>
+          <a href="./loans.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">Loans</a>
+          <a href="./Faqs.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
+          <a href="./about.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">About</a>
+          <a href="./contact.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">Contact</a>
+          <a href="./requestloan.html" class="block px-4 py-2 bg-orange-500 text-white text-center">Request Loan</a>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+          <section class="relative h-[400px]">
+            <div
+              class="absolute inset-0 bg-cover bg-center"
+              style="background-image: url('/images/grassmoney.jpeg')"
+            >
+              <div class="absolute inset-0 bg-black/30"></div>
+              <div
+                class="relative h-full flex flex-col items-center justify-center text-white text-center px-4"
+              >
+                <span
+                  class="text-orange-400 text-sm font-semibold tracking-wider uppercase mb-2"
+                  >CONTACT</span
+                >
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
+                  Feel free to get in touch
+                </h1>
+              </div>
+            </div>
+          </section>
+<section class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-6">
+                <span class="text-orange-400">‖</span> HOW MUCH DO YOU NEED? <span class="text-orange-400">‖</span>
+            </h2>
+            <h3 class="text-xl font-semibold mb-4">Loan Details</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Loan Amount*</span>
+                    </label>
+                    <input type="number" placeholder="Loan Amount" class="input input-bordered" />
+                </div>
+                
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Monthly Income*</span>
+                    </label>
+                    <input type="number" placeholder="Monthly Income" class="input input-bordered" />
+                </div>
+                
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Purpose of Loan*</span>
+                    </label>
+                    <select class="select select-bordered">
+                        <option disabled selected>Select Purpose of Loan</option>
+                        <option>Personal Loan</option>
+                        <option>Business Loan</option>
+                        <option>Education Loan</option>
+                    </select>
+                </div>
+                
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Loan Period*</span>
+                    </label>
+                    <select class="select select-bordered">
+                        <option disabled selected>Select Loan Period</option>
+                        <option>6 Months</option>
+                        <option>12 Months</option>
+                        <option>24 Months</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Details Section -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-6">
+                <span class="text-orange-400">‖</span> FILL IN PERSONAL DETAILS <span class="text-orange-400">‖</span>
+            </h2>
+            <h3 class="text-xl font-semibold mb-4">Personal Details</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Full Name*</span>
+                    </label>
+                    <input type="text" placeholder="Full Name" class="input input-bordered" />
+                </div>
+                
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Email*</span>
+                    </label>
+                    <input type="email" placeholder="Your Email" class="input input-bordered" />
+                </div>
+                
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Mobile Number*</span>
+                    </label>
+                    <input type="tel" placeholder="Mobile Number" class="input input-bordered" />
+                </div>
+                
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Marital Status*</span>
+                    </label>
+                    <select class="select select-bordered">
+                        <option disabled selected>Select Marital Status</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Divorced</option>
+                    </select>
+                </div>
+                
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Birth Date*</span>
+                    </label>
+                    <input type="date" class="input input-bordered" />
+                </div>
+                
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">National ID*</span>
+                    </label>
+                    <input type="text" placeholder="Enter NIN" class="input input-bordered" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Details Section -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-6">
+                <span class="text-orange-400">‖</span> OTHER DETAILS <span class="text-orange-400">‖</span>
+            </h2>
+            <h3 class="text-xl font-semibold mb-4">Other Details</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Physical Address*</span>
+                    </label>
+                    <textarea class="textarea textarea-bordered" placeholder="Address"></textarea>
+                </div>
+                
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Employer Status*</span>
+                    </label>
+                    <select class="select select-bordered">
+                        <option disabled selected>Select Employer Status</option>
+                        <option>Employed</option>
+                        <option>Self-Employed</option>
+                        <option>Unemployed</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary bg-orange-500 hover:bg-orange-600 border-none">Submit</button>
+    </div>
+
+   </main>
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6 t-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <img src="/images/logo.JPG" alt="Jolfi Logo" class="w-36 mb-4" />
+          <p>
+            Jolfi Enterprise Limited is an integral, registered money lending
+            company. It is run by a certified business coach, professional
+            chemist and business consulting expert Mr. Joel Niag
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="./loans.html" class="hover:text-orange-400">Loans</a></li>
+            <li>
+              <a href="./requestloan.html" class="hover:text-orange-400">Apply for Loan</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="hover:text-orange-400">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-3">Contact Info</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center"><a href="">Jolfi2015@gmail.com</a></li>
+            <li>+256 778358425 +256 773551782</li>
+          </ul>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-300 hover:text-orange-400"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-orange-400"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-orange-400"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </html>

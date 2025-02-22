@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jolfi Ent Ltd</title>
+    <link rel="icon" href="/images/logo.JPG" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <header>
+      <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+              <a href="./index.html">
+                <div
+                  class="bg-white p-4 relative"
+                  style="clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%)"
+                >
+                  <span class="text-2xl font-bold">
+                    <span class="text-orange-500">Jolfi</span>
+                    <span class="text-blue-600">Ent Ltd</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+    
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+              <a href="./index.html" class="text-orange-500 font-medium">Home</a>
+              <a href="./loans.html" class="text-gray-600 hover:text-orange-500 font-medium">Loans</a>
+              <a href="./Faqs.html" class="text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
+              <a href="./about.html" class="text-gray-600 hover:text-orange-500 font-medium">About</a>
+              <a href="./contact.html" class="text-gray-600 hover:text-orange-500 font-medium">Contact</a>
+            </div>
+    
+            <!-- Action Buttons -->
+            <div class="flex items-center space-x-4">
+              <button class="text-gray-600 hover:text-orange-500">
+                <i class="fas fa-search text-xl"></i>
+              </button>
+              <a href="./requestloan.html" class="btn bg-orange-500 hover:bg-orange-600 text-white border-none">
+                Request Loan
+              </a>
+            </div>
+    
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+              <label for="menu-toggle" class="cursor-pointer text-gray-600 hover:text-orange-500">
+                <i class="fas fa-bars text-2xl"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+        <div class="hidden peer-checked:block md:hidden bg-white shadow-md">
+          <a href="./index.html" class="block px-4 py-2 text-orange-500 font-medium">Home</a>
+          <a href="./loans.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">Loans</a>
+          <a href="./Faqs.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
+          <a href="./about.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">About</a>
+          <a href="./contact.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">Contact</a>
+          <a href="./requestloan.html" class="block px-4 py-2 bg-orange-500 text-white text-center">Request Loan</a>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="relative h-[400px]">
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('/images/grassmoney.jpeg')"
+        >
+          <div class="absolute inset-0 bg-black/30"></div>
+          <div
+            class="relative h-full flex flex-col items-center justify-center text-white text-center px-4"
+          >
+            <span
+              class="text-orange-400 text-sm font-semibold tracking-wider uppercase mb-2"
+              >CONTACT</span
+            >
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
+              Feel free to get in touch
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <!-- Form Card -->
+            <div class="card bg-white shadow-xl mb-12">
+              <div class="card-body p-8">
+                <form class="space-y-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="form-control w-full">
+                      <input
+                        type="text"
+                        placeholder="Full name"
+                        class="input input-bordered bg-gray-50 focus:bg-white"
+                      />
+                    </div>
+                    <div class="form-control w-full">
+                      <input
+                        type="email"
+                        placeholder="Email address"
+                        class="input input-bordered bg-gray-50 focus:bg-white"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="form-control w-full">
+                      <input
+                        type="tel"
+                        placeholder="Phone number"
+                        class="input input-bordered bg-gray-50 focus:bg-white"
+                      />
+                    </div>
+                    <div class="form-control w-full">
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        class="input input-bordered bg-gray-50 focus:bg-white"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-control w-full">
+                    <textarea
+                      class="textarea textarea-bordered bg-gray-50 focus:bg-white h-32"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+
+                  <div class="text-center">
+                    <button
+                      class="btn bg-orange-500 hover:bg-orange-600 text-white border-none min-w-[200px]"
+                    >
+                      Send a Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div
+                class="card bg-white shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div class="card-body items-center text-center p-6">
+                  <div
+                    class="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center mb-4"
+                  >
+                    <i class="fas fa-phone text-white text-xl"></i>
+                  </div>
+                  <h3 class="font-semibold text-gray-800 mb-2">
+                    Have any question?
+                  </h3>
+                  <p class="text-gray-600">
+                    +256 778358425<br />
+                    +256 773551782
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card bg-white shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div class="card-body items-center text-center p-6">
+                  <div
+                    class="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center mb-4"
+                  >
+                    <i class="fas fa-envelope text-white text-xl"></i>
+                  </div>
+                  <h3 class="font-semibold text-gray-800 mb-2">
+                    Write us email
+                  </h3>
+                  <p class="text-gray-600">jolfi2015@gmail.com</p>
+                </div>
+              </div>
+
+              <div
+                class="card bg-white shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div class="card-body items-center text-center p-6">
+                  <div
+                    class="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center mb-4"
+                  >
+                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                  </div>
+                  <h3 class="font-semibold text-gray-800 mb-2">
+                    Visit anytime
+                  </h3>
+                  <p class="text-gray-600">
+                   Gulu
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=Gulu&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://sprunkin.com/">Sprunki Game</a></div><style>.mapouter{position:relative;top:35px;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;top:45px}.gmap_iframe {height:400px!important;}</style></div> </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <img src="/images/logo.JPG" alt="Jolfi Logo" class="w-36 mb-4" />
+          <p>
+            Jolfi Enterprise Limited is an integral, registered money lending
+            company. It is run by a certified business coach, professional
+            chemist and business consulting expert Mr. Joel Niag
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="./loans.html" class="hover:text-orange-400">Loans</a>
+            </li>
+            <li>
+              <a href="./requestloan.html" class="hover:text-orange-400"
+                >Apply for Loan</a
+              >
+            </li>
+            <li>
+              <a href="./contact.html" class="hover:text-orange-400">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-3">Contact Info</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <a
+                href=""
+                >jolfi2015@gmail.com</a
+              >
+            </li>
+            <li>+256 778358425 +256 773551782</li>
+          </ul>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-300 hover:text-orange-400"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-orange-400"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-orange-400"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

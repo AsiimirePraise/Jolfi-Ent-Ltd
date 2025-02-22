@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jolfi Ent Ltd</title>
+    <link rel="icon" href="/images/logo.JPG" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <header>
+      <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+              <a href="./index.html">
+                <div
+                  class="bg-white p-4 relative"
+                  style="clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%)"
+                >
+                  <span class="text-2xl font-bold">
+                    <span class="text-orange-500">Jolfi</span>
+                    <span class="text-blue-600">Ent Ltd</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+    
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+              <a href="./index.html" class="text-orange-500 font-medium">Home</a>
+              <a href="./loans.html" class="text-gray-600 hover:text-orange-500 font-medium">Loans</a>
+              <a href="./Faqs.html" class="text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
+              <a href="./about.html" class="text-gray-600 hover:text-orange-500 font-medium">About</a>
+              <a href="./contact.html" class="text-gray-600 hover:text-orange-500 font-medium">Contact</a>
+            </div>
+    
+            <!-- Action Buttons -->
+            <div class="flex items-center space-x-4">
+              <button class="text-gray-600 hover:text-orange-500">
+                <i class="fas fa-search text-xl"></i>
+              </button>
+              <a href="./requestloan.html" class="btn bg-orange-500 hover:bg-orange-600 text-white border-none">
+                Request Loan
+              </a>
+            </div>
+    
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+              <label for="menu-toggle" class="cursor-pointer text-gray-600 hover:text-orange-500">
+                <i class="fas fa-bars text-2xl"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+        <div class="hidden peer-checked:block md:hidden bg-white shadow-md">
+          <a href="./index.html" class="block px-4 py-2 text-orange-500 font-medium">Home</a>
+          <a href="./loans.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">Loans</a>
+          <a href="./Faqs.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
+          <a href="./about.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">About</a>
+          <a href="./contact.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">Contact</a>
+          <a href="./requestloan.html" class="block px-4 py-2 bg-orange-500 text-white text-center">Request Loan</a>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      
+      <section class="bg-base-100">
+        <div class="relative h-[400px]">
+          <div
+            class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('/images/grassmoney.jpeg')"
+          >
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div
+              class="relative h-full flex flex-col items-center justify-center text-white text-center px-4"
+            >
+              <div class="space-y-4">
+                <p class="text-sm uppercase tracking-wider">HOME > LOANS</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
+                  Get a loan for your needs
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loan Products Section -->
+        <div class="bg-gray-50 py-16">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+              <span
+                class="text-orange-500 text-sm font-semibold tracking-wider uppercase"
+                >WHAT WE PROVIDE</span
+              >
+              <h2 class="text-3xl font-bold mt-2">Our Loan Products</h2>
+            </div>
+
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+            >
+              <!-- Personal Loans -->
+              <div
+                class="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                <figure class="relative h-48">
+                  <img
+                    src="/images/moneylend.jpeg"
+                    alt="Personal Loans"
+                    class="w-full h-full object-cover"
+                  />
+                </figure>
+                <div class="card-body text-center p-6">
+                  <h3 class="text-xl font-bold mb-2">Personal Loans</h3>
+                  <p class="text-gray-600 mb-4">
+                    Quick and flexible personal loans with competitive rates.
+                    Perfect for emergencies and personal needs.
+                  </p>
+                  <div class="mt-auto space-y-3">
+                    <p class="text-sm font-semibold text-orange-500">
+                      Up to UGX 1,000,000
+                    </p>
+                    <p class="text-xs text-gray-500">
+                      Processing Time: 12 Hours
+                    </p>
+                    <button
+                      class="btn bg-orange-500 hover:bg-orange-600 text-white border-none w-full"
+                    >
+                      Apply Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Business Loans -->
+              <div
+                class="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                <figure class="relative h-48">
+                  <img
+                    src="/images/business.jpeg"
+                    alt="Business Loans"
+                    class="w-full h-full object-cover"
+                  />
+                </figure>
+                <div class="card-body text-center p-6">
+                  <h3 class="text-xl font-bold mb-2">Business Loans</h3>
+                  <p class="text-gray-600 mb-4">
+                    Grow your business with our flexible financing solutions
+                    designed for entrepreneurs.
+                  </p>
+                  <div class="mt-auto space-y-3">
+                    <p class="text-sm font-semibold text-orange-500">
+                      Up to UGX 5,000,000
+                    </p>
+                    <p class="text-xs text-gray-500">
+                      Flexible Repayment Terms
+                    </p>
+                    <button
+                      class="btn bg-orange-500 hover:bg-orange-600 text-white border-none w-full"
+                    >
+                      Apply Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                <figure class="relative h-48">
+                  <img
+                    src="/images/Lpo.jpeg"
+                    alt="LPO Financing"
+                    class="w-full h-full object-cover"
+                  />
+                </figure>
+                <div class="card-body text-center p-6">
+                  <h3 class="text-xl font-bold mb-2">School fees loans</h3>
+                  <p class="text-gray-600 mb-4">
+                    Get up to 70% financing on your education.
+                  </p>
+                  <div class="mt-auto space-y-3">
+                    <p class="text-sm font-semibold text-orange-500">
+                      Up to 70% of financing
+                    </p>
+                    <p class="text-xs text-gray-500">Quick Approval Process</p>
+                    <button
+                      class="btn bg-orange-500 hover:bg-orange-600 text-white border-none w-full"
+                    >
+                      Apply Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-blue-600 py-12 relative overflow-hidden">
+        <div class="absolute top-4 left-4 text-blue-400/20">
+          <i class="fas fa-money-bill-wave text-6xl"></i>
+        </div>
+        <div class="absolute bottom-4 right-4 text-blue-400/20">
+          <i class="fas fa-credit-card text-6xl"></i>
+        </div>
+
+        <!-- Content -->
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-10">
+            <span
+              class="text-orange-400 text-sm font-semibold tracking-wider uppercase"
+              >WORK PROCESS</span
+            >
+            <h2 class="text-white text-3xl font-bold mt-2">How We Work</h2>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 relative">
+              <!-- Step 1 -->
+              <div class="text-center">
+                <div
+                  class="bg-white rounded-full w-20 h-20 mx-auto mb-3 flex items-center justify-center relative"
+                >
+                  <span
+                    class="absolute -top-2 -right-2 bg-orange-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm"
+                    >1</span
+                  >
+                  <i class="fas fa-file-alt text-orange-500 text-2xl"></i>
+                </div>
+                <h3 class="text-white text-sm font-medium">
+                  Fill in application form
+                </h3>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="text-center">
+                <div
+                  class="bg-white rounded-full w-20 h-20 mx-auto mb-3 flex items-center justify-center relative"
+                >
+                  <span
+                    class="absolute -top-2 -right-2 bg-orange-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm"
+                    >2</span
+                  >
+                  <i class="fas fa-user-check text-orange-500 text-2xl"></i>
+                </div>
+                <h3 class="text-white text-sm font-medium">
+                  Pass background Check
+                </h3>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="text-center">
+                <div
+                  class="bg-white rounded-full w-20 h-20 mx-auto mb-3 flex items-center justify-center relative"
+                >
+                  <span
+                    class="absolute -top-2 -right-2 bg-orange-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm"
+                    >3</span
+                  >
+                  <i
+                    class="fas fa-hand-holding-usd text-orange-500 text-2xl"
+                  ></i>
+                </div>
+                <h3 class="text-white text-sm font-medium">Get Loan</h3>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="text-center">
+                <div
+                  class="bg-white rounded-full w-20 h-20 mx-auto mb-3 flex items-center justify-center relative"
+                >
+                  <span
+                    class="absolute -top-2 -right-2 bg-orange-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm"
+                    >4</span
+                  >
+                  <i class="fas fa-sync text-orange-500 text-2xl"></i>
+                </div>
+                <h3 class="text-white text-sm font-medium">Repayment</h3>
+              </div>
+
+              <!-- Connecting Lines -->
+              <div
+                class="hidden md:block absolute top-10 left-1/4 right-1/4 border-t-2 border-dashed border-blue-400 z-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="relative grid grid-cols-1 md:grid-cols-2 items-center gap-0 py-0 bg-white"
+      >
+        <div class="relative w-full h-full">
+          <img
+            src="/images/handshake.jpeg"
+            alt="Business Loan"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="relative bg-gradient-to-r from-orange-500 via-orange-400 to-red-500 text-white p-12 flex flex-col justify-center items-start space-y-6 min-h-[350px]"
+        >
+          <p class="uppercase tracking-wider text-sm font-medium">
+            Simple / Transparent / Secure
+          </p>
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+            Get quick business loans
+          </h2>
+          <a href="./requestloan.html"
+            ><button
+              class="bg-white text-orange-600 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-orange-100 transition-all"
+            >
+              Apply For Loan
+            </button></a
+          >
+          <div class="absolute -right-12 top-20 hidden md:block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-20 h-20 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <img src="/images/logo.JPG" alt="Jolfi Logo" class="w-36 mb-4" />
+          <p>
+            Jolfi Enterprise Limited is an integral, registered money lending
+            company. It is run by a certified business coach, professional
+            chemist and business consulting expert Mr. Joel
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="./loans.html" class="hover:text-orange-400">Loans</a>
+            </li>
+            <li>
+              <a href="./requestloan.html" class="hover:text-orange-400"
+                >Apply for Loan</a
+              >
+            </li>
+            <li>
+              <a href="./contact.html" class="hover:text-orange-400">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-3">Contact Info</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <a href="">Jolfi2015@gmail.com</a>
+            </li>
+            <li>+256 778358425 +256 773551782</li>
+          </ul>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-300 hover:text-orange-400"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-orange-400"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-orange-400"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
