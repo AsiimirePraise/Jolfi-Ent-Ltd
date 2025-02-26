@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jolfi Ent Ltd</title>
     <link rel="icon" href="/images/logo.JPG" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script>
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        alert('Your form has been successfully submitted!');
+        window.location.href = './index.html'; // Redirect to home page
+      }
+    </script>
   </head>
   <body class="bg-gray-100">
     <header>
@@ -34,7 +35,7 @@
                 </div>
               </a>
             </div>
-    
+
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-8">
               <a href="./index.html" class="text-orange-500 font-medium">Home</a>
@@ -43,7 +44,7 @@
               <a href="./about.html" class="text-gray-600 hover:text-orange-500 font-medium">About</a>
               <a href="./contact.html" class="text-gray-600 hover:text-orange-500 font-medium">Contact</a>
             </div>
-    
+
             <!-- Action Buttons -->
             <div class="flex items-center space-x-4">
               <button class="text-gray-600 hover:text-orange-500">
@@ -53,7 +54,7 @@
                 Request Loan
               </a>
             </div>
-    
+
             <!-- Mobile menu button -->
             <div class="md:hidden">
               <label for="menu-toggle" class="cursor-pointer text-gray-600 hover:text-orange-500">
@@ -62,7 +63,7 @@
             </div>
           </div>
         </div>
-    
+
         <!-- Mobile Menu -->
         <input type="checkbox" id="menu-toggle" class="hidden peer" />
         <div class="hidden peer-checked:block md:hidden bg-white shadow-md">
@@ -75,201 +76,214 @@
         </div>
       </nav>
     </header>
-    
+
     <main>
-          <section class="relative h-[400px]">
-            <div
-              class="absolute inset-0 bg-cover bg-center"
-              style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQNiUdlS9W_r6zFrstaBI219lMke585A1cw&s')"
-            >
-              <div class="absolute inset-0 bg-black/30"></div>
-              <div
-                class="relative h-full flex flex-col items-center justify-center text-white text-center px-4"
-              >
-                <span
-                  class="text-orange-400 text-sm font-semibold tracking-wider uppercase mb-2"
-                  >CONTACT</span
-                >
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
-                  Feel free to get in touch
-                </h1>
+      <section class="relative h-[400px]">
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQNiUdlS9W_r6zFrstaBI219lMke585A1cw&s')"
+        >
+          <div class="absolute inset-0 bg-black/30"></div>
+          <div class="relative h-full flex flex-col items-center justify-center text-white text-center px-4">
+            <span class="text-orange-400 text-sm font-semibold tracking-wider uppercase mb-2">CONTACT</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
+              Feel free to get in touch
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-100 min-h-screen p-8">
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
+          <form onsubmit="handleFormSubmit(event)">
+            <div class="mb-8">
+              <h2 class="text-2xl font-bold mb-6">
+                <span class="text-orange-400">‖</span> HOW MUCH DO YOU NEED? <span class="text-orange-400">‖</span>
+              </h2>
+              <h3 class="text-xl font-semibold mb-4">Loan Details</h3>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Loan Amount*</span>
+                  </label>
+                  <input type="number" placeholder="Loan Amount" class="input input-bordered bg-white" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Monthly Income*</span>
+                  </label>
+                  <input type="number" placeholder="Monthly Income" class="input input-bordered bg-white" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Purpose of Loan*</span>
+                  </label>
+                  <select class="select select-bordered bg-white" required>
+                    <option disabled selected>Select Purpose of Loan</option>
+                    <option>Personal Loan</option>
+                    <option>Business Loan</option>
+                    <option>Education Loan</option>
+                  </select>
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Loan Period*</span>
+                  </label>
+                  <select class="select select-bordered bg-white" required>
+                    <option disabled selected>Select Loan Period</option>
+                    <option>6 Months</option>
+                    <option>12 Months</option>
+                    <option>24 Months</option>
+                  </select>
+                </div>
               </div>
             </div>
-          </section>
-<section class="bg-gray-100 min-h-screen p-8">
-    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
-        <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-6">
-                <span class="text-orange-400">‖</span> HOW MUCH DO YOU NEED? <span class="text-orange-400">‖</span>
-            </h2>
-            <h3 class="text-xl font-semibold mb-4">Loan Details</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Loan Amount*</span>
-                    </label>
-                    <input type="number" placeholder="Loan Amount" class="input input-bordered" />
-                </div>
-                
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Monthly Income*</span>
-                    </label>
-                    <input type="number" placeholder="Monthly Income" class="input input-bordered" />
-                </div>
-                
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Purpose of Loan*</span>
-                    </label>
-                    <select class="select select-bordered">
-                        <option disabled selected>Select Purpose of Loan</option>
-                        <option>Personal Loan</option>
-                        <option>Business Loan</option>
-                        <option>Education Loan</option>
-                    </select>
-                </div>
-                
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Loan Period*</span>
-                    </label>
-                    <select class="select select-bordered">
-                        <option disabled selected>Select Loan Period</option>
-                        <option>6 Months</option>
-                        <option>12 Months</option>
-                        <option>24 Months</option>
-                    </select>
-                </div>
-            </div>
-        </div>
 
-        <!-- Personal Details Section -->
-        <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-6">
+            <!-- Personal Details Section -->
+            <div class="mb-8">
+              <h2 class="text-2xl font-bold mb-6">
                 <span class="text-orange-400">‖</span> FILL IN PERSONAL DETAILS <span class="text-orange-400">‖</span>
-            </h2>
-            <h3 class="text-xl font-semibold mb-4">Personal Details</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Full Name*</span>
-                    </label>
-                    <input type="text" placeholder="Full Name" class="input input-bordered" />
-                </div>
-                
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Email*</span>
-                    </label>
-                    <input type="email" placeholder="Your Email" class="input input-bordered" />
-                </div>
-                
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Mobile Number*</span>
-                    </label>
-                    <input type="tel" placeholder="Mobile Number" class="input input-bordered" />
-                </div>
-                
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Marital Status*</span>
-                    </label>
-                    <select class="select select-bordered">
-                        <option disabled selected>Select Marital Status</option>
-                        <option>Single</option>
-                        <option>Married</option>
-                        <option>Divorced</option>
-                    </select>
-                </div>
-                
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Birth Date*</span>
-                    </label>
-                    <input type="date" class="input input-bordered" />
-                </div>
-                
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">National ID*</span>
-                    </label>
-                    <input type="text" placeholder="Enter NIN" class="input input-bordered" />
-                </div>
-            </div>
-        </div>
+              </h2>
+              <h3 class="text-xl font-semibold mb-4">Personal Details</h3>
 
-        <!-- Other Details Section -->
-        <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Full Name*</span>
+                  </label>
+                  <input type="text" placeholder="Full Name" class="input input-bordered bg-white" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Email*</span>
+                  </label>
+                  <input type="email" placeholder="Your Email" class="input input-bordered bg-white" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Mobile Number*</span>
+                  </label>
+                  <input type="tel" placeholder="Mobile Number" class="input input-bordered bg-white" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Marital Status*</span>
+                  </label>
+                  <select class="select select-bordered bg-white" required>
+                    <option disabled selected>Select Marital Status</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                  </select>
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Birth Date*</span>
+                  </label>
+                  <input type="date" class="input input-bordered bg-white" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">National ID*</span>
+                  </label>
+                  <input type="text" placeholder="Enter NIN" class="input input-bordered bg-white" required />
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Details Section -->
+            <div class="mb-8">
+              <h2 class="text-2xl font-bold mb-6">
                 <span class="text-orange-400">‖</span> OTHER DETAILS <span class="text-orange-400">‖</span>
-            </h2>
-            <h3 class="text-xl font-semibold mb-4">Other Details</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              </h2>
+              <h3 class="text-xl font-semibold mb-4">Other Details</h3>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Physical Address*</span>
-                    </label>
-                    <textarea class="textarea textarea-bordered" placeholder="Address"></textarea>
+                  <label class="label">
+                    <span class="label-text">Physical Address*</span>
+                  </label>
+                  <textarea class="textarea textarea-bordered bg-white" placeholder="Address" required></textarea>
                 </div>
-                
+
                 <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">Employer Status*</span>
-                    </label>
-                    <select class="select select-bordered">
-                        <option disabled selected>Select Employer Status</option>
-                        <option>Employed</option>
-                        <option>Self-Employed</option>
-                        <option>Unemployed</option>
-                    </select>
+                  <label class="label">
+                    <span class="label-text">Referee Name*</span>
+                  </label>
+                  <input type="text" placeholder="Referee Name" class="input input-bordered bg-white" required />
                 </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Referee Number*</span>
+                  </label>
+                  <input type="tel" placeholder="Referee Contact Number" class="input input-bordered bg-white" required />
+                </div>
+              </div>
             </div>
-        </div>
 
-        <button class="btn btn-primary bg-orange-500 hover:bg-orange-600 border-none">Submit</button>
-    </div>
-
-   </main>
-   <footer class="bg-gray-900 text-gray-300 py-12 px-6 shadow-inner">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
-      <div class="space-y-4">
-        <img src="/images/logo.JPG" alt="Jolfi Logo" class="w-36 mx-auto md:mx-0 rounded-lg shadow-lg" />
-        <p class="leading-relaxed text-sm">
-          Jolfi Enterprise Limited is a registered money lending company run by Mr. Joel, a certified business coach, professional chemist, and business consulting expert.
-        </p>
-      </div>
-  
-      <div class="space-y-4">
-        <h4 class="text-lg font-semibold text-white">Quick Links</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="./loans.html" class="hover:text-orange-400 transition-colors">Loans</a></li>
-          <li><a href="./requestloan.html" class="hover:text-orange-400 transition-colors">Apply for Loan</a></li>
-          <li><a href="./contact.html" class="hover:text-orange-400 transition-colors">Contact</a></li>
-          <li><a href="#" class="hover:text-orange-400 transition-colors">Terms & Conditions</a></li>
-        </ul>
-      </div>
-  
-      <div class="space-y-4">
-        <h4 class="text-lg font-semibold text-white">Contact Info</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="mailto:jolfienterpriseltd@gmail.com" class="hover:text-orange-400 transition-colors">jolfienterpriseltd@gmail.com</a></li>
-          <li>+256 778358425 / +256 773551782</li>
-        </ul>
-        <div class="flex justify-center md:justify-start space-x-3 mt-3">
-          <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors text-lg"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors text-lg"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors text-lg"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Submit Button -->
+            <div class="mb-6">
+              <button type="submit" class="btn btn-block bg-orange-500 text-white hover:bg-orange-600">
+                Submit Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6 shadow-inner">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+        <div class="space-y-4">
+          <img src="/images/logo.JPG" alt="Jolfi Logo" class="w-36 mx-auto md:mx-0 rounded-lg shadow-lg" />
+          <p class="leading-relaxed text-sm">
+            Jolfi Enterprise Limited is a registered money lending company run by Mr. Joel, a certified business coach, professional chemist, and business consulting expert.
+          </p>
+        </div>
+    
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="./loans.html" class="hover:text-orange-400 transition-colors">Loans</a></li>
+            <li><a href="./requestloan.html" class="hover:text-orange-400 transition-colors">Apply for Loan</a></li>
+            <li><a href="./contact.html" class="hover:text-orange-400 transition-colors">Contact</a></li>
+            <li><a href="#" class="hover:text-orange-400 transition-colors">Terms & Conditions</a></li>
+          </ul>
+        </div>
+    
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-white">Contact Info</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:jolfi2015@gmail.com" class="hover:text-orange-400 transition-colors">jolfienterpriseltd@gmail.com</a></li>
+            <li>+256 778358425 / +256 773551782</li>
+          </ul>
+          <div class="flex justify-center md:justify-start space-x-3 mt-3">
+            <a href="https://www.facebook.com/jolfienterprise" target="_blank" class="text-gray-300 hover:text-orange-400 transition-colors text-lg">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            
+            <a href="https://twitter.com/jolfienterprise" target="_blank" class="text-gray-300 hover:text-orange-400 transition-colors text-lg">
+              <i class="fab fa-twitter"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/jolfienterprise" target="_blank" class="text-gray-300 hover:text-orange-400 transition-colors text-lg">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+             </div>
         </div>
       </div>
-    </div>
-    <div class="border-t border-gray-700 mt-10 pt-4 text-center text-xs text-gray-400">
-      © 2025 Jolfi Enterprise Limited. All Rights Reserved.
-    </div>
-  </footer>
-  
-  </html>
+      <div class="border-t border-gray-700 mt-10 pt-4 text-center text-xs text-gray-400">
+        © 2025 Jolfi Enterprise Limited. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>
