@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body class="bg-gray-100">
     <header>
@@ -37,7 +38,7 @@
     
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-8">
-              <a href="./index.html" class="text-orange-500 font-medium">Home</a>
+              <a href="#" class="text-orange-500 font-medium">Home</a>
               <a href="./loans.html" class="text-gray-600 hover:text-orange-500 font-medium">Loans</a>
               <a href="./Faqs.html" class="text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
               <a href="./about.html" class="text-gray-600 hover:text-orange-500 font-medium">About</a>
@@ -66,7 +67,7 @@
         <!-- Mobile Menu -->
         <input type="checkbox" id="menu-toggle" class="hidden peer" />
         <div class="hidden peer-checked:block md:hidden bg-white shadow-md">
-          <a href="./index.html" class="block px-4 py-2 text-orange-500 font-medium">Home</a>
+          <a href="#" class="block px-4 py-2 text-orange-500 font-medium">Home</a>
           <a href="./loans.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">Loans</a>
           <a href="./Faqs.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
           <a href="./about.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">About</a>
@@ -75,8 +76,6 @@
         </div>
       </nav>
     </header>
-    
-
     <main>
       <section
         class="relative bg-cover bg-center h-screen pt-16"
@@ -115,7 +114,7 @@
           <h3 class="text-orange-500 font-semibold text-lg mb-2">
             || ABOUT JOLFI ENTERPRISE ||
           </h3>
-          <h2 class="text-4xl font-bold leading-tight mb-4">
+          <h2 class="text-4xl font-bold leading-tight mb-4 text-blue-600">
             Loan Services & Business Mentorship
           </h2>
           <p class="text-gray-600 mb-6">
@@ -175,7 +174,7 @@
           <h3 class="text-orange-500 font-semibold text-lg mb-2">
             || JOLFI LOANS ||
           </h3>
-          <h2 class="text-4xl font-bold leading-tight">Our Loan Products</h2>
+          <h2 class="text-4xl font-bold leading-tight text-blue-600">Our Loan Products</h2>
           <p class="text-gray-600 mt-2">
             Need A Loan? We Give You Cash You Need in 12 Hours.
           </p>
@@ -386,56 +385,40 @@
         </div>
       </section>
     </main>
-    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div>
-          <img src="/images/logo.JPG" alt="Jolfi Logo" class="w-36 mb-4" />
-          <p>
-            Jolfi Enterprise Limited is an integral, registered money lending
-            company. It is run by a certified business coach, professional
-            chemist and business consulting expert Mr. Joel
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6 shadow-inner">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+        <div class="space-y-4">
+          <img src="/images/logo.JPG" alt="Jolfi Logo" class="w-36 mx-auto md:mx-0 rounded-lg shadow-lg" />
+          <p class="leading-relaxed text-sm">
+            Jolfi Enterprise Limited is a registered money lending company run by Mr. Joel, a certified business coach, professional chemist, and business consulting expert.
           </p>
         </div>
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
-          <ul class="space-y-2">
-            <li>
-              <a href="./loans.html" class="hover:text-orange-400">Loans</a>
-            </li>
-            <li>
-              <a href="./requestloan.html" class="hover:text-orange-400"
-                >Apply for Loan</a
-              >
-            </li>
-            <li>
-              <a href="./contact.html" class="hover:text-orange-400">Contact</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-orange-400">Terms & Conditions</a>
-            </li>
+    
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="./loans.html" class="hover:text-orange-400 transition-colors">Loans</a></li>
+            <li><a href="./requestloan.html" class="hover:text-orange-400 transition-colors">Apply for Loan</a></li>
+            <li><a href="./contact.html" class="hover:text-orange-400 transition-colors">Contact</a></li>
+            <li><a href="#" class="hover:text-orange-400 transition-colors">Terms & Conditions</a></li>
           </ul>
         </div>
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-3">Contact Info</h4>
-          <ul class="space-y-2">
-            <li class="flex items-center">
-              <a href="">Jolfi2015@gmail.com</a>
-            </li>
-            <li>+256 778358425 +256 773551782</li>
+    
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-white">Contact Info</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:jolfienterpriseltd@gmail.com" class="hover:text-orange-400 transition-colors">jolfienterpriseltd@gmail.com</a></li>
+            <li>+256 778358425 / +256 773551782</li>
           </ul>
-          <div class="flex space-x-4 mt-4">
-            <a href="#" class="text-gray-300 hover:text-orange-400"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" class="text-gray-300 hover:text-orange-400"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="#" class="text-gray-300 hover:text-orange-400"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
+          <div class="flex justify-center md:justify-start space-x-3 mt-3">
+            <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors text-lg"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors text-lg"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors text-lg"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
+      <div class="border-t border-gray-700 mt-10 pt-4 text-center text-xs text-gray-400">
+        © 2025 Jolfi Enterprise Limited. All Rights Reserved.
+      </div>
     </footer>
-  </body>
-</html>
+    
