@@ -1,0 +1,112 @@
+:root {
+    --jolfi-blue: #0a3d62;
+    --jolfi-light-blue: #3498db;
+    --jolfi-orange: #e67e22;
+    --jolfi-navy: #1e3a5f;
+    --jolfi-black: #2c3e50;
+    --jolfi-grey: #f0f2f5;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--jolfi-black);
+    background-color: #fafafa;
+  }
+  
+  .text-jolfi-blue { color: var(--jolfi-blue); }
+  .text-jolfi-orange { color: var(--jolfi-orange); }
+  .text-jolfi-navy { color: var(--jolfi-navy); }
+  .bg-jolfi-blue { background-color: var(--jolfi-blue); }
+  .bg-jolfi-light-blue { background-color: var(--jolfi-light-blue); }
+  .bg-jolfi-orange { background-color: var(--jolfi-orange); }
+  .bg-jolfi-navy { background-color: var(--jolfi-navy); }
+  .bg-jolfi-grey { background-color: var(--jolfi-grey); }
+  
+  .logo-clip {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+  }
+  
+  .btn-primary {
+    background-color: var(--jolfi-orange);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary:hover {
+    background-color: #d35400;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-secondary {
+    background-color: var(--jolfi-blue);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #072f4a;
+  }
+  
+  .section-title {
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .section-title:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: var(--jolfi-orange);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  .card-service {
+    transition: all 0.3s ease;
+  }
+  
+  .card-service:hover {
+    transform: translateY(-10px);
+  }
+  
+  .nav-link {
+    position: relative;
+    padding-bottom: 0.25rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--jolfi-orange);
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover:after,
+  .active-link:after {
+    width: 100%;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .peer:checked ~ .hidden {
+    display: block;
+  }

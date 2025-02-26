@@ -34,62 +34,109 @@
                 </div>
               </a>
             </div>
-    
+
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-8">
-              <a href="./index.html" class="text-orange-500 font-medium">Home</a>
-              <a href="./loans.html" class="text-gray-600 hover:text-orange-500 font-medium">Loans</a>
-              <a href="./Faqs.html" class="text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
-              <a href="./about.html" class="text-gray-600 hover:text-orange-500 font-medium">About</a>
-              <a href="./contact.html" class="text-gray-600 hover:text-orange-500 font-medium">Contact</a>
+              <a href="./index.html" class="text-orange-500 font-medium"
+                >Home</a
+              >
+              <a
+                href="./loans.html"
+                class="text-gray-600 hover:text-orange-500 font-medium"
+                >Loans</a
+              >
+              <a
+                href="./Faqs.html"
+                class="text-gray-600 hover:text-orange-500 font-medium"
+                >FAQs</a
+              >
+              <a
+                href="./about.html"
+                class="text-gray-600 hover:text-orange-500 font-medium"
+                >About</a
+              >
+              <a
+                href="./contact.html"
+                class="text-gray-600 hover:text-orange-500 font-medium"
+                >Contact</a
+              >
             </div>
-    
+
             <!-- Action Buttons -->
             <div class="flex items-center space-x-4">
               <button class="text-gray-600 hover:text-orange-500">
                 <i class="fas fa-search text-xl"></i>
               </button>
-              <a href="./requestloan.html" class="btn bg-orange-500 hover:bg-orange-600 text-white border-none">
+              <a
+                href="./requestloan.html"
+                class="btn bg-orange-500 hover:bg-orange-600 text-white border-none"
+              >
                 Request Loan
               </a>
             </div>
-    
+
             <!-- Mobile menu button -->
             <div class="md:hidden">
-              <label for="menu-toggle" class="cursor-pointer text-gray-600 hover:text-orange-500">
+              <label
+                for="menu-toggle"
+                class="cursor-pointer text-gray-600 hover:text-orange-500"
+              >
                 <i class="fas fa-bars text-2xl"></i>
               </label>
             </div>
           </div>
         </div>
-    
+
         <!-- Mobile Menu -->
         <input type="checkbox" id="menu-toggle" class="hidden peer" />
         <div class="hidden peer-checked:block md:hidden bg-white shadow-md">
-          <a href="./index.html" class="block px-4 py-2 text-orange-500 font-medium">Home</a>
-          <a href="./loans.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">Loans</a>
-          <a href="./Faqs.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">FAQs</a>
-          <a href="./about.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">About</a>
-          <a href="./contact.html" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium">Contact</a>
-          <a href="./requestloan.html" class="block px-4 py-2 bg-orange-500 text-white text-center">Request Loan</a>
+          <a
+            href="./index.html"
+            class="block px-4 py-2 text-orange-500 font-medium"
+            >Home</a
+          >
+          <a
+            href="./loans.html"
+            class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium"
+            >Loans</a
+          >
+          <a
+            href="./Faqs.html"
+            class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium"
+            >FAQs</a
+          >
+          <a
+            href="./about.html"
+            class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium"
+            >About</a
+          >
+          <a
+            href="./contact.html"
+            class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-medium"
+            >Contact</a
+          >
+          <a
+            href="./requestloan.html"
+            class="block px-4 py-2 bg-orange-500 text-white text-center"
+            >Request Loan</a
+          >
         </div>
       </nav>
     </header>
-    
+
     <main>
-      
       <section class="bg-base-100">
         <div class="relative h-[400px]">
           <div
             class="absolute inset-0 bg-cover bg-center"
             style="background-image: url('/images/grassmoney.jpeg')"
           >
-            <div class="absolute inset-0 bg-black/30"></div>
+           <div class="absolute inset-0 bg-black/40"></div>
             <div
               class="relative h-full flex flex-col items-center justify-center text-white text-center px-4"
             >
               <div class="space-y-4">
-                <p class="text-sm uppercase tracking-wider">HOME > LOANS</p>
+                <p class="text-sm uppercase tracking-wider"><a href="./index.html" class="hover:text-orange-400">HOME></a> LOANS</p>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
                   Get a loan for your needs
                 </h1>
@@ -97,7 +144,6 @@
             </div>
           </div>
         </div>
-
         <!-- Loan Products Section -->
         <div class="bg-gray-50 py-16">
           <div class="container mx-auto px-4">
@@ -110,7 +156,7 @@
             </div>
 
             <div
-              class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+              class="grid grid-cols-1 md:grid-cols-3 gap-7 max-w-6xl mx-auto"
             >
               <!-- Personal Loans -->
               <div
@@ -136,11 +182,13 @@
                     <p class="text-xs text-gray-500">
                       Processing Time: 12 Hours
                     </p>
-                    <button
-                      class="btn bg-orange-500 hover:bg-orange-600 text-white border-none w-full"
-                    >
-                      Apply Now
-                    </button>
+                    <a href="./requestloan.html">
+                      <button
+                        class="btn bg-orange-500 hover:bg-orange-600 text-white border-none w-full"
+                      >
+                        Apply Now
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -169,11 +217,13 @@
                     <p class="text-xs text-gray-500">
                       Flexible Repayment Terms
                     </p>
-                    <button
-                      class="btn bg-orange-500 hover:bg-orange-600 text-white border-none w-full"
-                    >
-                      Apply Now
-                    </button>
+                    <a href="./requestloan.html">
+                      <button
+                        class="btn bg-orange-500 hover:bg-orange-600 text-white border-none w-full"
+                      >
+                        Apply Now
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -188,20 +238,23 @@
                   />
                 </figure>
                 <div class="card-body text-center p-6">
-                  <h3 class="text-xl font-bold mb-2">School fees loans</h3>
+                  <h3 class="text-xl font-bold mb-2">LPO Financing</h3>
                   <p class="text-gray-600 mb-4">
-                    Get up to 70% financing on your education.
+                    Financing for businesses to procure goods for supply
+                    contracts with government and private entities.
                   </p>
                   <div class="mt-auto space-y-3">
                     <p class="text-sm font-semibold text-orange-500">
-                      Up to 70% of financing
+                      Up to 70% of Procurement Value
                     </p>
-                    <p class="text-xs text-gray-500">Quick Approval Process</p>
-                    <button
-                      class="btn bg-orange-500 hover:bg-orange-600 text-white border-none w-full"
-                    >
-                      Apply Now
-                    </button>
+                    <p class="text-xs text-gray-500">Quick Processing Time</p>
+                    <a href="./requestloan.html">
+                      <button
+                        class="btn bg-orange-500 hover:bg-orange-600 text-white border-none w-full"
+                      >
+                        Apply Now
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -345,57 +398,91 @@
         </div>
       </section>
     </main>
-    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div>
-          <img src="/images/logo.JPG" alt="Jolfi Logo" class="w-36 mb-4" />
-          <p>
-            Jolfi Enterprise Limited is an integral, registered money lending
-            company. It is run by a certified business coach, professional
-            chemist and business consulting expert Mr. Joel
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6 shadow-inner">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left"
+      >
+        <div class="space-y-4">
+          <img
+            src="/images/logo.JPG"
+            alt="Jolfi Logo"
+            class="w-36 mx-auto md:mx-0 rounded-lg shadow-lg"
+          />
+          <p class="leading-relaxed text-sm">
+            Jolfi Enterprise Limited is a registered money lending company run
+            by Mr. Joel, a certified business coach, professional chemist, and
+            business consulting expert.
           </p>
         </div>
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
-          <ul class="space-y-2">
+
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
             <li>
-              <a href="./loans.html" class="hover:text-orange-400">Loans</a>
+              <a
+                href="./loans.html"
+                class="hover:text-orange-400 transition-colors"
+                >Loans</a
+              >
             </li>
             <li>
-              <a href="./requestloan.html" class="hover:text-orange-400"
+              <a
+                href="./requestloan.html"
+                class="hover:text-orange-400 transition-colors"
                 >Apply for Loan</a
               >
             </li>
             <li>
-              <a href="./contact.html" class="hover:text-orange-400">Contact</a>
+              <a
+                href="./contact.html"
+                class="hover:text-orange-400 transition-colors"
+                >Contact</a
+              >
             </li>
             <li>
-              <a href="#" class="hover:text-orange-400">Terms & Conditions</a>
+              <a href="#" class="hover:text-orange-400 transition-colors"
+                >Terms & Conditions</a
+              >
             </li>
           </ul>
         </div>
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-3">Contact Info</h4>
-          <ul class="space-y-2">
-            <li class="flex items-center">
-              <a href="">Jolfi2015@gmail.com</a>
+
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-white">Contact Info</h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="mailto:jolfienterpriseltd@gmail.com"
+                class="hover:text-orange-400 transition-colors"
+                >jolfienterpriseltd@gmail.com</a
+              >
             </li>
-            <li>+256 778358425 +256 773551782</li>
+            <li>+256 778358425 / +256 773551782</li>
           </ul>
-          <div class="flex space-x-4 mt-4">
-            <a href="#" class="text-gray-300 hover:text-orange-400"
+          <div class="flex justify-center md:justify-start space-x-3 mt-3">
+            <a
+              href="#"
+              class="text-gray-300 hover:text-orange-400 transition-colors text-lg"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a href="#" class="text-gray-300 hover:text-orange-400"
+            <a
+              href="#"
+              class="text-gray-300 hover:text-orange-400 transition-colors text-lg"
               ><i class="fab fa-twitter"></i
             ></a>
-            <a href="#" class="text-gray-300 hover:text-orange-400"
+            <a
+              href="#"
+              class="text-gray-300 hover:text-orange-400 transition-colors text-lg"
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </div>
         </div>
       </div>
+      <div
+        class="border-t border-gray-700 mt-10 pt-4 text-center text-xs text-gray-400"
+      >
+        © 2025 Jolfi Enterprise Limited. All Rights Reserved.
+      </div>
     </footer>
-
   </body>
 </html>
